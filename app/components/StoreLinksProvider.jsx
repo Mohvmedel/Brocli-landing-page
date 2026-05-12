@@ -66,7 +66,7 @@ export function StoreLinksProvider({ children }) {
     async function loadStoreLinks() {
       try {
         const response = await fetch(endpoint, {
-          method: "POST",
+          method: "GET",
           credentials: "omit",
           cache: "no-store",
           headers: {
