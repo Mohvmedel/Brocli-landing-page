@@ -33,7 +33,7 @@ export default function FinalCta() {
           <p>{t.final.right}</p>
         </div>
 
-        <p className="mt-5 text-[12px] font-semibold text-[#6D7D71]">
+        <p className="mt-5 text-center text-[12px] font-semibold text-[#6D7D71]">
           © {year} BrocliConnect. All rights reserved.
         </p>
       </div>
