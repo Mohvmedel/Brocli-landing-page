@@ -7,20 +7,23 @@ import Solution from "./components/Solution";
 import LenisScroll from "./components/LenisScroll";
 import FinalCta from "./components/FinalCta";
 import { LocaleProvider } from "./components/LocaleProvider";
+import { StoreLinksProvider } from "./components/StoreLinksProvider";
 
 export default function Home() {
   return (
     <LocaleProvider>
-      <main className="min-h-screen">
-        <LenisScroll />
-        <Header />
-        <Hero />
-        <MarketProblem />
-        <RabatLive />
-        <Services />
-        <Solution />
-        <FinalCta />
-      </main>
+      <StoreLinksProvider>
+        <main className="min-h-screen">
+          <LenisScroll />
+          <Header />
+          <Hero />
+          <MarketProblem />
+          <RabatLive />
+          <Services />
+          <Solution />
+          <FinalCta />
+        </main>
+      </StoreLinksProvider>
     </LocaleProvider>
   );
 }

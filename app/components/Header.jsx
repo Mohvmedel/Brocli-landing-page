@@ -7,8 +7,8 @@ import { useLocale } from "./LocaleProvider";
 function BrocliLogo() {
   return (
     <Link href="/" className="flex items-center gap-2 select-none" aria-label="Brocli home">
-      <span className="text-[28px] font-black italic leading-none tracking-tight text-[#00B050]">Brocli</span>
-      <span className="mt-2 h-2 w-2 rounded-full bg-[#FFD447]" aria-hidden="true" />
+      <span className="text-[32px] font-black leading-none tracking-tight text-[#00B050]">Brocli</span>
+      <span className="mt-2.5 h-2.5 w-2.5 rounded-full bg-[#FFD447]" aria-hidden="true" />
     </Link>
   );
 }

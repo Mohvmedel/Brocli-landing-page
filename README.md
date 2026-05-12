@@ -37,6 +37,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## Backend Configuration
+
+The app download buttons read store URLs from the existing Brocli backend `POST /api/configurations` response:
+
+```bash
+NEXT_PUBLIC_BROCLI_API_BASE_URL=https://your-backend-domain.com
+```
+
+The landing page accepts either the backend origin, `/api` base URL, or the full `/api/configurations` endpoint. If the backend is not configured or unavailable, the buttons fall back to the generic app store pages so the page still renders in production.
+
 ## Scripts
 
 ```bash
