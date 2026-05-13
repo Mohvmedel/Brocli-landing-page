@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { useLocale } from "./LocaleProvider";
+import { WhatsAppCta } from "./SupportActions";
 
 const MAP_CITIES = [
   { left: 67.5, top: 5.7, label: "Tangier", align: "right" },
@@ -161,6 +162,24 @@ export default function RabatLive() {
 
           {/* RIGHT — Proof list + CTA */}
           <div className="flex flex-col gap-8">
+            <motion.div
+              variants={fadeUp}
+              initial="hidden"
+              animate={animate}
+              className="rounded-[1.35rem] border-4 border-[#06180F] bg-white p-5 shadow-[10px_10px_0_#FFD447]"
+            >
+              <p className="text-[12px] font-black uppercase tracking-[0.18em] text-[#00B050]">
+                {t.coverage.areaTitle}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {t.coverage.areas.map((area) => (
+                  <span key={area} className="rounded-full bg-[#EAF8F0] px-3 py-2 text-[12px] font-black text-[#06180F]">
+                    {area}
+                  </span>
+                ))}
+              </div>
+              <WhatsAppCta className="mt-5 w-full sm:w-auto">{t.coverage.areaCta}</WhatsAppCta>
+            </motion.div>
 
             <motion.ul
               variants={listStagger}
@@ -187,7 +206,7 @@ export default function RabatLive() {
             </motion.ul>
 
             <motion.a
-              href="#download"
+              href="#services"
               variants={fadeUp}
               initial="hidden"
               animate={animate}

@@ -19,6 +19,15 @@ body {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+section,
+#download,
+#cities,
+#services,
+#how-it-works {
+  scroll-margin-top: 96px;
 }
 
 ::selection {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useLocale } from "./LocaleProvider";
+import { getWhatsAppUrl } from "./SupportActions";
 
 export default function Services() {
   const { t } = useLocale();
@@ -20,7 +21,7 @@ export default function Services() {
             </h2>
           </div>
           <a
-            href="#download"
+            href="#services"
             className="group inline-flex w-fit shrink-0 items-center gap-1.5 pb-1 text-[13px] font-black uppercase tracking-[0.08em] text-[#06180F] underline decoration-[#FFD447] decoration-4 underline-offset-4 transition-colors hover:text-[#00B050]"
           >
             {t.services.cta}
@@ -63,6 +64,20 @@ export default function Services() {
                   <p className="mt-2 text-[0.9rem] font-bold leading-[1.6] text-[#1D3328]">
                     {ideal}
                   </p>
+                  <a
+                    href="#services"
+                    className="mt-5 inline-flex min-h-11 items-center justify-center rounded-full bg-[#00B050] px-4 text-[12px] font-black uppercase tracking-[0.08em] text-white shadow-[0_14px_28px_rgba(0,176,80,0.18)] transition-transform hover:-translate-y-0.5"
+                  >
+                    {t.services.bookCta}
+                  </a>
+                  <a
+                    href={getWhatsAppUrl()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 text-center text-[12px] font-black uppercase tracking-[0.12em] text-[#08763A] transition-colors hover:text-[#00B050]"
+                  >
+                    {t.services.supportText}
+                  </a>
                 </div>
               </div>
             </div>

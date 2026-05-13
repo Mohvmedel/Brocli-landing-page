@@ -48,7 +48,7 @@ export default function Header() {
               {locale.toUpperCase()} / {nextLocale.toUpperCase()}
             </button>
             <a
-              href="#download"
+              href="#services"
               className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[#00B050] px-5 text-[13px] font-black uppercase tracking-[0.06em] text-white shadow-[0_14px_30px_rgba(0,176,80,0.22)] transition-transform hover:-translate-y-0.5"
             >
               {t.nav.download}
@@ -93,7 +93,7 @@ export default function Header() {
               {locale.toUpperCase()} / {nextLocale.toUpperCase()}
             </button>
             <a
-              href="#download"
+              href="#services"
               className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#00B050] px-5 text-[14px] font-black uppercase tracking-[0.06em] text-white"
               onClick={() => setMenuOpen(false)}
             >
