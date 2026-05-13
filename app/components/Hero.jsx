@@ -28,11 +28,11 @@ function HeroImageCollage() {
 
   return (
     <div className="relative mx-auto w-full max-w-[680px]">
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
         <CollageImage
           src="/brand/hero-worker-1.png"
           alt="Brocli cleaning agent standing in a clean modern Rabat apartment"
-          className="col-span-2 aspect-[4/3] border border-[#DDE8DC] lg:col-span-3 lg:row-span-2 lg:aspect-auto lg:min-h-[520px]"
+          className="aspect-[4/5] border border-[#DDE8DC]"
           imageClassName="object-cover object-[52%_center]"
         >
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,24,15,0)_58%,rgba(6,24,15,0.42)_100%)]" />
@@ -49,14 +49,14 @@ function HeroImageCollage() {
         <CollageImage
           src="/brand/hero-worker-2.png"
           alt="Brocli cleaning agent holding cleaning supplies"
-          className="aspect-[4/5] lg:col-span-2 lg:aspect-[5/4]"
+          className="aspect-[4/5] border border-[#DDE8DC]"
           imageClassName="object-cover object-[50%_center]"
         />
 
         <CollageImage
           src="/brand/hero-worker-3.png"
           alt="Brocli cleaning agent checking booking details on a phone"
-          className="aspect-[4/5] lg:col-span-2 lg:aspect-[5/4]"
+          className="aspect-[4/5] border border-[#DDE8DC]"
           imageClassName="object-cover object-[53%_center]"
         >
           <div className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.13em] text-[#08763A] backdrop-blur">
