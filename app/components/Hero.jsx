@@ -27,12 +27,12 @@ function HeroImageCollage() {
   const { t } = useLocale();
 
   return (
-    <div className="relative mx-auto w-full max-w-[680px]">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+    <div className="relative mx-auto w-full max-w-[780px]">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-[1.05fr_0.95fr] sm:items-stretch sm:gap-4">
         <CollageImage
-          src="/brand/hero-worker-1.png"
+          src="/brand/hero-worker-1-new.png"
           alt="Brocli cleaning agent standing in a clean modern Rabat apartment"
-          className="aspect-[4/5] border border-[#DDE8DC]"
+          className="aspect-[3/5] border border-[#DDE8DC]"
           imageClassName="object-cover object-[52%_center]"
         >
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,24,15,0)_58%,rgba(6,24,15,0.42)_100%)]" />
@@ -46,23 +46,25 @@ function HeroImageCollage() {
           </div>
         </CollageImage>
 
-        <CollageImage
-          src="/brand/hero-worker-2.png"
-          alt="Brocli cleaning agent holding cleaning supplies"
-          className="aspect-[4/5] border border-[#DDE8DC]"
-          imageClassName="object-cover object-[50%_center]"
-        />
+        <div className="grid grid-cols-1 gap-3 sm:grid-rows-2 sm:gap-4">
+          <CollageImage
+            src="/brand/hero-worker-2.png"
+            alt="Brocli cleaning agent holding cleaning supplies"
+            className="aspect-[4/5] border border-[#DDE8DC] sm:aspect-auto"
+            imageClassName="object-cover object-[50%_center]"
+          />
 
-        <CollageImage
-          src="/brand/hero-worker-3.png"
-          alt="Brocli cleaning agent checking booking details on a phone"
-          className="aspect-[4/5] border border-[#DDE8DC]"
-          imageClassName="object-cover object-[53%_center]"
-        >
-          <div className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.13em] text-[#08763A] backdrop-blur">
-            {t.hero.verifiedBadge}
-          </div>
-        </CollageImage>
+          <CollageImage
+            src="/brand/hero-worker-3.png"
+            alt="Brocli cleaning agent checking booking details on a phone"
+            className="aspect-[4/5] border border-[#DDE8DC] sm:aspect-auto"
+            imageClassName="object-cover object-[53%_center]"
+          >
+            <div className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.13em] text-[#08763A] backdrop-blur">
+              {t.hero.verifiedBadge}
+            </div>
+          </CollageImage>
+        </div>
       </div>
     </div>
   );
@@ -110,7 +112,7 @@ export default function Hero() {
   return (
     <>
       <section ref={heroRef} className="w-full overflow-hidden bg-white">
-        <div className="mx-auto grid max-w-7xl gap-9 px-5 pb-10 pt-8 md:px-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center lg:px-16 lg:pb-16 lg:pt-12">
+        <div className="mx-auto grid max-w-7xl gap-9 px-5 pb-10 pt-8 md:px-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-center lg:px-16 lg:pb-16 lg:pt-12">
           <div className="flex flex-col">
             <div data-hero-reveal className="mb-5 flex w-fit items-center gap-2 rounded-full border border-[#CFE9D8] bg-[#EAF8F0] px-3 py-2">
               <span className="inline-block h-2 w-2 shrink-0 animate-pulse rounded-full bg-[#00B050]" />

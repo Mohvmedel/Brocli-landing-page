@@ -25,9 +25,6 @@ export default function FinalCta() {
           </div>
 
           <div className="flex flex-col gap-2.5 sm:flex-row lg:flex-col">
-            <BookingCta>{t.support.primaryCta}</BookingCta>
-            <WhatsAppCta>{t.support.whatsappCta}</WhatsAppCta>
-            <AppCta>{t.support.appCta}</AppCta>
             <StoreBadges appStoreTop={t.hero.appStoreTop} playStoreTop={t.hero.playTop} compact />
           </div>
         </div>

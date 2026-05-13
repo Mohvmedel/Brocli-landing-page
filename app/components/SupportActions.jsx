@@ -1,10 +1,7 @@
 "use client";
 
-const DEFAULT_WHATSAPP_URL =
-  "https://wa.me/212656712008?text=Hi%20Brocli%2C%20I%20need%20help%20before%20booking%20a%20cleaning.";
-
 export function getWhatsAppUrl() {
-  return process.env.NEXT_PUBLIC_BROCLI_WHATSAPP_URL || DEFAULT_WHATSAPP_URL;
+  return process.env.NEXT_PUBLIC_BROCLI_WHATSAPP_URL || null;
 }
 
 export function BookingCta({ children, className = "" }) {
